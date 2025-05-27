@@ -8,29 +8,29 @@ from logging.handlers import RotatingFileHandler
 load_dotenv()
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7551208909:AAFRrweE-JjljotjFY2TtD4JDmp9GzzgX3E")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "20519744"))
+APP_ID = int(os.environ.get("APP_ID", "24348284"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "7c50a4e525de5fcd9756fba209d0c4e4")
+API_HASH = os.environ.get("API_HASH", "1282eb3350eaf441a244b9347b2bd18b")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002035253447"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002477202499"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5019668523"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5457101197"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://MTRename:jc1CNur9cMxINNkn@cluster0.8yk3x8g.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://file:file@cluster0.xchvy4o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002189352128"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001443255396"))
 JOIN_REQUEST_ENABLE = os.environ.get("JOIN_REQUEST_ENABLED", "True")
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -40,7 +40,7 @@ START_PIC = os.environ.get("START_PIC","https://i.ibb.co/gz9yFCg/file-2751.jpg")
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI store private files for @MovieTimesTV.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5019668523").split()):
+    for x in (os.environ.get("ADMINS", "5457101197").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")

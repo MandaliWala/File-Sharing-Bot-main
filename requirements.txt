@@ -1,6 +1,7 @@
 # --- For-Bot-Working --------- #
 pyrofork==2.3.45
 TgCrypto
+pyromod==1.5
 python-dotenv
 # --- For-Database ------------ #
 pymongo
